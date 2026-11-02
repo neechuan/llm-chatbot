@@ -172,7 +172,7 @@ TOOL_DEFINITIONS = [
 
 # Model configuration
 MODEL_CONFIG = {
-    "model_name": "gemini-1.5-pro",
+    "model_name": "gemini-3-flash-preview",
     "temperature": 0.1,
     "tool_calling_config": {"mode": "AUTO"}
 }

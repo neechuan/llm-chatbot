@@ -44,7 +44,7 @@ class RBCChatbot:
         
         # Initialize the LLM with explicit API key
         api_key = os.getenv("GEMINI_API_KEY")
-        self.llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.2, google_api_key=api_key)
+        self.llm = ChatGoogleGenerativeAI(model="gemini-3-flash-preview", temperature=0.2, google_api_key=api_key)
         
         # Create the retrieval chain
         self.qa_chain = RetrievalQA.from_chain_type(

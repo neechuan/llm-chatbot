@@ -5,7 +5,7 @@ Werkzeug==2.3.7
 # Core dependencies
 google-generativeai>=0.3.2
 python-dotenv>=1.0.0
-langchain>=0.1.0
+langchain>=0.1.0,<1.0
 langchain-google-genai>=0.0.5
 langchain-community>=0.0.10
 langchain-chroma>=0.0.10
@@ -24,6 +24,7 @@ cryptography>=41.0.0
 
 # MCP framework
 mcp==1.9.1
+pydantic>=2.7.2,<2.11
 fastapi>=0.100.0
 uvicorn>=0.22.0
 aiohttp>=3.8.5

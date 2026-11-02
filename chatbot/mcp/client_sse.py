@@ -24,7 +24,7 @@ from chatbot.response_formatter import ResponseFormatter
 from chatbot.intent_detector import IntentDetector
 
 # Load environment variables
-load_dotenv("../../.env")
+load_dotenv(os.path.join(os.path.dirname(__file__), "../../.env"))
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 class InteractiveBankingAssistant:
